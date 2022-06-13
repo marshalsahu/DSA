@@ -1,8 +1,6 @@
 package OneUniqueRestThrice;
 
 import java.util.*;
-import java.io.*;
-
 //find element that appears once where rest all appear thrice.
 
 public class OneUniqueRestThrice {
@@ -29,5 +27,7 @@ public class OneUniqueRestThrice {
             tn = tn | cwtnp2;
         }
         System.out.println(tnp1);
+
+        sc.close();
     }
 }

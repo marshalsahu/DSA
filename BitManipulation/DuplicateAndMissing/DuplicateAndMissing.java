@@ -2,8 +2,7 @@ package DuplicateAndMissing;
 
 //find duplicate and missig number from 1 to N
 import java.util.*;
-import java.io.*
-;
+
 public class DuplicateAndMissing {
 
     public static void main(String[] args) {
@@ -52,7 +51,7 @@ public class DuplicateAndMissing {
                 break;
             }
         }
-
+        sc.close();
     }
-    
+
 }

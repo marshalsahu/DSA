@@ -1,6 +1,4 @@
-package KernighansAlgorithm;
 import java.util.*;
-import java.io.*;
 
 // to count set bits in an integer. -> findrightmost1 and subtract it from n
 public class Kernighan {
@@ -16,5 +14,6 @@ public class Kernighan {
         }
         // System.out.println(Integer.toBinaryString(temp));
         System.out.println(counter);
+        sc.close();
     }
 }

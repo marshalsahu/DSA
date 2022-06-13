@@ -50,5 +50,6 @@ public class SameSetBit {
         int k = csb(n);
         long ans= solution(n, k, 63);
         System.out.println(ans);
+        sc.close();
     }
 }

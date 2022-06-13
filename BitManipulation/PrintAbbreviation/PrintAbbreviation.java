@@ -35,5 +35,6 @@ public class PrintAbbreviation {
         String str = sc.next();
 
         solve(str);
+        sc.close();
     }
 }

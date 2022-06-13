@@ -16,5 +16,6 @@ public class FlipBits {
             c -= temp;
         }
         System.out.println(count);
+        sc.close();
     }
 }

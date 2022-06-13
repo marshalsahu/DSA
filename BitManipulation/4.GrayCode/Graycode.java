@@ -1,6 +1,4 @@
-package GrayCode;
 import java.util.*;
-import java.io.*;
 
 //Gray code using recursion and backtracking
 
@@ -35,5 +33,6 @@ public class Graycode {
         for(int i=0; i<result.size(); i++){
             System.out.println(result.get(i));
         }
+        sc.close();
     }
 }

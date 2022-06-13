@@ -43,5 +43,7 @@ public class EncodingUTF8 {
         }
 
         boolean result = solve(arr);
+        System.out.println(result);
+        sc.close();
     }
 }

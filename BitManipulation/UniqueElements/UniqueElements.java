@@ -1,7 +1,6 @@
 package UniqueElements;
 
 import java.util.*;
-import java.io.*;
 
 
 //find element that appers once while all other elements appear twice.
@@ -20,5 +19,6 @@ public class UniqueElements {
             unique = unique ^ element;
         }
         System.out.println(unique);
+        sc.close();
     }
 }

@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "4.GrayCode",
+        "3.JosephusAlgorithm",
+        "2.KernighansAlgorithm",
+        "1.RightMostSetBitMask",
+        "5.MinDevelopers"
+    ]
+}

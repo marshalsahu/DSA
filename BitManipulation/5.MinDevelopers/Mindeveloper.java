@@ -1,6 +1,4 @@
-package MinDevelopers;
 import java.util.*;
-import java.io.*;
 
 public class Mindeveloper {
     static ArrayList<Integer> res = new ArrayList<>();
@@ -43,5 +41,6 @@ public class Mindeveloper {
         ans.add(cp);
         solution(persons, skills, cp+1, ans, mask | (persons[cp]));
         ans.remove( ans.size()-1);
+        
     }
 }

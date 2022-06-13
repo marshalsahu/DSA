@@ -63,5 +63,7 @@ public class ValidWordsPuzzle {
         for (int val: result){
             System.out.print(val+" ");
         }
+
+        sc.close();
     }
 }

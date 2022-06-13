@@ -1,7 +1,6 @@
 package TwoUnique;
 //all repeating except two.. [12, 24, 25, 45, 24, 45] = 12, 25
 import java.util.*;
-import java.io.*;
 
 public class TwoUnique {
     public static void main(String[] args) {
@@ -34,6 +33,6 @@ public class TwoUnique {
             System.out.println(x);
             System.out.println(y);
         }
-
+        sc.close();
     }
 }

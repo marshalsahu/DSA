@@ -1,7 +1,6 @@
 package Triplets;
 
 import java.util.*;
-import java.io.*;
 
 //find no of triplets.
 public class Triplets {
@@ -29,6 +28,6 @@ public class Triplets {
         }
 
         solution(arr);
-
+        sc.close();
     }
 }

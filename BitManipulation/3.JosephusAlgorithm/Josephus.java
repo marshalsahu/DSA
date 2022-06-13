@@ -1,6 +1,4 @@
-package JosephusAlgorithm;
 import java.util.*;
-import java.io.*;
 
 //Josephus algo gives us the number which is left if we start to remove alternate numbers starting from 1 to n in a circular fashion.
 public class Josephus {
@@ -26,5 +24,7 @@ public class Josephus {
         int ans = solution(n);
 
         System.out.println(ans);
+
+        sc.close();
     }
 }
