@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+//here we use concept of level and options.
+ // for abc : step 1. : (ques,ans) => (abc,"") ----> level1
+ // level2 : (bc,a) , (bc, "") ---> options(to include or not include a)
 public class PrintSubSequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

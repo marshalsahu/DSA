@@ -1,5 +1,18 @@
 import java.util.Scanner;
 
+//for 123 , possible encoding are (abc, aw, lc)
+//level and options :
+//level 1 : (123,"")
+//leve1 2 : (23, "a"),            (3,"l")
+//level 3 : (3, "ab"), ("","aw"), ("","lc")
+//level 4 : ("", "abc"),("", "aw"), ("","lc")
+
+
+//case 303 
+//level1 : (303, "")
+//level2 : (03, "c"), other not possiable as number greater than 26
+//level3 : not possible as 0 doesn't correspond to any letter
+
 public class PrintEncoding {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

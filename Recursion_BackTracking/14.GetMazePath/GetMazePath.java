@@ -9,6 +9,7 @@ public class GetMazePath {
 
         ArrayList<String> res = getMazePath(1,1,n,m);
         System.out.println(res);
+        sc.close();
     }
 
     public static ArrayList<String> getMazePath(int sr, int sc, int dr, int dc){

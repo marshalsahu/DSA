@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
+//for input 572 , print all key combinations which is possible
 public class GetKeyPadCombinatin {
 
 
@@ -20,7 +20,10 @@ public class GetKeyPadCombinatin {
 
     }
 
-    public static ArrayList<String> getKpc(String s){
+    public static ArrayList<String> getKpc(String s){ 
+        //f: 573 : ["mtg","mth","mti","mug","muh","mui","ntg","nth","nti","nug","nuh","nui","otg","oth","oti","oug","ouh","oui"]
+        //e: 73 : ["tg","th","ti","ug","uh","ui"]
+        //e-> f : m*["tg","th","ti","ug","uh","ui"] + n*["tg","th","ti","ug","uh","ui"]+ o*["tg","th","ti","ug","uh","ui"]
         if(s.length() == 0){
             ArrayList<String> newRes = new ArrayList<String>();
             newRes.add("");

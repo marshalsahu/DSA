@@ -20,7 +20,7 @@ public class AllIndicesOfArray {
         }
         sc.close();
     }
-
+    //1st way
     public static int[] allIndicesofArray(int[] arr, int data, int idx, int fsf){
         if(idx == arr.length){
             int[] res = new int[fsf];
@@ -37,5 +37,23 @@ public class AllIndicesOfArray {
       
         return res;
         
+    }
+
+    //2nd way
+    public static int[] resultIndices(int[] arr, int data, int idx, int fsf){
+
+        if(idx == arr.length){
+            int[] iarr = new int[fsf];
+            return iarr;
+        }
+
+        if(arr[idx] == data){
+            int[] iarr = resultIndices(arr, data, idx+1, fsf+1);
+            iarr[fsf] = idx;
+            return iarr;
+        }else{
+            int[] iarr = resultIndices(arr, data, idx+1, fsf);
+            return iarr;
+        }
     }
 }

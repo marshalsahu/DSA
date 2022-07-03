@@ -22,10 +22,10 @@ public class FirstIndexOccurence {
         }
 
         if(arr[n]==data){
-            System.out.println("first index is "+ (n+1));
+            System.out.println("first index is "+ (n));
             return;
         }
-        firstIndexOccurence(arr, n, data);
+        firstIndexOccurence(arr, n+1, data);
 
     }
 }

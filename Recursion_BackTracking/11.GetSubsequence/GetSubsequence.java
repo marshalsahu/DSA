@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+//subsequence of string abc is ['', 'a', 'b','c','ab','ac','bc','abc'] : i.e, every character has possiblity whether it can be included or not
+//for n length , total subsequence will be 2^n
 
+//substring is different from subsequence as substring of abc will be ['a', 'ab', 'abc', 'b', 'bc', 'c'], total substring is (n*(n+1))/2
 public class GetSubsequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,7 +17,10 @@ public class GetSubsequence {
     }
 
     public static ArrayList<String> getSubsequence(String s){
-
+        //f : getss(abc) = ["","c","b","bc","a","ac","ab","abc"]
+        //e : getss(bc) = ["", "c","b","bc"]
+        //e-f : *["", "c","b","bc"] + a*["", "c","b","bc"] //every character has possibility whether it can be included in the result or not
+        //2^0 = 1 its identity.
         if(s.length() == 0){
             ArrayList<String> result = new ArrayList<>();
             result.add("");
