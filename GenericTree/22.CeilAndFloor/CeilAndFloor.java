@@ -1,6 +1,8 @@
 import java.util.*;
 
-public class FindPredecessorAndSuccessor {
+
+//ceil is smallest among larger, and floor is largest among smaller
+public class CeilAndFloor {
     private static class Node{
         int data;
         ArrayList<Node> children = new ArrayList<>();
@@ -27,33 +29,33 @@ public class FindPredecessorAndSuccessor {
                 st.push(t);
             }
         }
-        predecessor = null;
-        successor = null;
-        findPredecessorAndSuccessor(root,80);
-        System.out.println("predessor is "+ predecessor.data);
-        System.out.println("successor is "+ successor.data);
+        ceil = Integer.MAX_VALUE;
+        floor = Integer.MIN_VALUE;
+        ceilAndFloor(root, 50);
+        System.out.println("ceil is "+ceil);
+        System.out.println("floor is "+ floor);
 
     }
-    public static Node predecessor;
-    public static Node successor;
-    public static int state;
+    public static int ceil;
+    public static int floor;
+
     //find predessor and successor in preorder traversal
-    public static void findPredecessorAndSuccessor(Node node, int data){
-        
-        if(state == 0){
-            if(node.data == data){
-                state = 1;
-            }else{
-                predecessor = node;
+    public static void ceilAndFloor(Node node, int data){
+
+        if(node.data > data){
+            if(node.data < ceil){
+                ceil = node.data;
             }
-        }else if(state == 1){
-            successor = node;
-            state = 2;
-        }
-        for(Node child: node.children){
-            findPredecessorAndSuccessor(child,data);
         }
 
-    
+        if(node.data < data){
+            if(node.data > floor){
+                floor = node.data;
+            }
+        }
+
+        for(Node child : node.children){
+            ceilAndFloor(child, data);
+        }
     }
 }
