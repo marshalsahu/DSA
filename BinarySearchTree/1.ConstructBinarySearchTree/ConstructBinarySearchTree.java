@@ -24,8 +24,8 @@ public class ConstructBinarySearchTree{
     }
 
     public static void main(String[] args) {
-        int[] arr = {12,25,37,50,62,70,87};
-        Node root = construct(arr, 0, arr.length -1);
+        Integer[] arr = {12,25,37,50,62,70,87,100};
+        construct(arr, 0, arr.length -1);
         display(root);
     }
 
