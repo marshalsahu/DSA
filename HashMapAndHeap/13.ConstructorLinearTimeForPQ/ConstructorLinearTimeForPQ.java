@@ -1,9 +1,24 @@
 import java.util.ArrayList;
 
-public class PQUsingHeap {
-    
+public class ConstructorLinearTimeForPQ {
     public static class PriorityQueue{
         ArrayList<Integer> list = new ArrayList<>();
+
+        public PriorityQueue(int[] arr){
+            list = new ArrayList<>();
+            for(int val : arr){
+                list.add(val);
+            }
+
+            for(int i= list.size()/2-1 ; i >= 0;i--){
+                downheapify(i); //we are using downheapify becoz its time complexity is O(n),where as in upheapify it takes O(nlogn).
+            }
+
+            // upheapify way of adding element to PQ.
+            // for(int val:arr){
+            //     this.add(val);
+            // }
+        }
 
         public int size(){
             return list.size();
@@ -74,15 +89,12 @@ public class PQUsingHeap {
     }
 
     public static void main(String[] args) {
-        PriorityQueue pq = new PriorityQueue();
-        pq.add(50);
-        pq.add(30);
-        pq.add(40);
-        pq.add(35);
+        int[] arr = new int[]{10, 20,1,34,22,72};
+        PriorityQueue pq = new PriorityQueue(arr);
+      
         System.out.println(pq.peek());
         System.out.println(pq.remove());
-        pq.add(10);
-        pq.add(5);
+     
         System.out.println(pq.peek());
         System.out.println(pq.remove());
         System.out.println(pq.size());
