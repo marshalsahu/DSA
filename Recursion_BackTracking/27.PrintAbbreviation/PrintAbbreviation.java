@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// for ex pep : {pep, pe1, p1p,p2,1ep,1e1,2p,3}
+// for ex pep : {pep, pe1, p1p,p2,1ep,1e1,2p,3 }
 public class PrintAbbreviation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
