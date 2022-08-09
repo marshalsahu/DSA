@@ -37,9 +37,9 @@ public class Mindeveloper {
             return;
         }
 
-        solution(persons,skills, cp+1, ans, mask );
+        solution(persons,skills, cp+1, ans, mask ); //no
         ans.add(cp);
-        solution(persons, skills, cp+1, ans, mask | (persons[cp]));
+        solution(persons, skills, cp+1, ans, mask | (persons[cp])); //yes
         ans.remove( ans.size()-1);
         
     }

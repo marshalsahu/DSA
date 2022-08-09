@@ -7,7 +7,7 @@ public class Kernighan {
         int n = sc.nextInt();
         int counter = 0;
         // int temp = n; 
-        while(n > 0){
+        while(n != 0){
             int rmsb = n & (-n);
             counter+= 1;
             n -= rmsb;

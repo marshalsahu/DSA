@@ -44,10 +44,10 @@ public class NextGreaterElementOnRight {
                 st.pop();
             }
             
-            if(st.size() > 0){
-                nge[i] = st.peek();
-            }else{
+            if(st.size() == 0){
                 nge[i] = -1;
+            }else{
+                nge[i] = st.peek();
             }
 
             st.push(arr[i]);
@@ -64,7 +64,7 @@ public class NextGreaterElementOnRight {
         Stack<Integer> st = new Stack<>();
         
         st.push(0);
-        for(int i=0; i < arr.length; i++){
+        for(int i=1; i < arr.length; i++){
             while(st.size() > 0 && arr[i] > arr[st.peek()]){
                 int pos = st.peek();
                 nge[pos] = arr[i];
@@ -82,3 +82,4 @@ public class NextGreaterElementOnRight {
         return nge;
     }
 }
+ 

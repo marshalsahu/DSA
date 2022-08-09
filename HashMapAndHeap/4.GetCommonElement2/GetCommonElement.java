@@ -31,7 +31,7 @@ public class GetCommonElement {
         for(int val : arr2){
             if(hm.containsKey(val) && hm.get(val)>0){
                 int of = hm.get(val);
-                int nf = of+1;
+                int nf = of-1;
                 hm.put(val, nf);
             }
         }

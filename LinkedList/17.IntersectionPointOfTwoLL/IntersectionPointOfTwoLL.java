@@ -177,8 +177,8 @@ public class IntersectionPointOfTwoLL {
         llist2.addFirst(5);
         llist.display();
         llist2.display();
-        LinkedListProgram res = LinkedListProgram.addTwoLinkedList(llist, llist2);
-        res.display();
+        int data = LinkedListProgram.intersectionPoint(llist, llist2);
+        System.out.println(data);
 
     }
 }

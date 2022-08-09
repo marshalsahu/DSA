@@ -10,7 +10,7 @@ public class PQUsingHeap {
         }
 
         public int peek(){
-            if(list.size() == 0){
+            if(size() == 0){
                 System.out.println("underflow");
                 return -1;
             }
